@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="app\package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="app\src\components\" />
+    <Folder Include="app\src\services\" />
+    <Folder Include="app\src\scenes\" />
+    <Folder Include="app\src\components\vCard\" />
+    <Folder Include="app\public\locales\" />
+    <Folder Include="app\public\locales\en\" />
+    <Folder Include="app\public\locales\fr\" />
+    <Folder Include="app\src\components\header\" />
+    <Folder Include="app\src\components\header\assets\" />
+    <Folder Include="app\src\components\header\assets\imgs\" />
+  </ItemGroup>
+</Project>
