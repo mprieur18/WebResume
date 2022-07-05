@@ -10,9 +10,9 @@ function App() {
 
     return (
         <Suspense fallback={<h1>{i18n.t('loadingSuspense')}</h1>}>
-            <Menu i18n={i18n} />
-            <HomeScene i18n={i18n} />
-            <AboutScene i18n={i18n} />
+            <Menu />
+            <HomeScene />
+            <AboutScene />
         </Suspense>
     );
 }
